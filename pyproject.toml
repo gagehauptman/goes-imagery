@@ -1,0 +1,25 @@
+[project]
+name = "goes-imagery"
+version = "0.1.0"
+description = "Fetch and render true-color RGB imagery from GOES-18 (West) satellite"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "boto3>=1.35.0",
+    "netCDF4>=1.7.0",
+    "numpy>=1.26.0",
+    "Pillow>=10.0.0",
+]
+
+[project.scripts]
+goes-imagery = "goes_imagery.cli:main"
+
+[project.optional-dependencies]
+dev = ["ruff", "mypy"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100
