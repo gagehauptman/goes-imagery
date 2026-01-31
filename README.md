@@ -15,7 +15,6 @@ Fetches raw band data from NOAA's AWS bucket and composites it into a proper RGB
 ## Installation
 
 ```bash
-cd /storage/git/goes-imagery
 pip install -e .
 ```
 
@@ -111,17 +110,6 @@ Data available from 2023 to present, updated every 10 minutes.
 - Large earth sizes (>4096) may use significant memory during processing
 - GOES-West views the Pacific; GOES-East views the Atlantic
 
-## Example Wallpaper Script
-
-```bash
-#!/bin/bash
-# Update GOES wallpaper every 10 minutes
-
-OUTPUT="$HOME/.cache/goes-wallpaper.png"
-goes-imagery -q -o "$OUTPUT"
-swww img "$OUTPUT" --transition-type=fade --transition-duration=2
-```
-
 ## License
 
-Public domain satellite data from NOAA. Code is MIT licensed.
+Public domain satellite data from NOAA. Code is Unlicensed.
