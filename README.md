@@ -1,3 +1,5 @@
+**This tool was basically entirely vibecoded, FYI**
+
 # GOES Imagery
 
 Generate true-color RGB imagery from GOES geostationary weather satellites.
